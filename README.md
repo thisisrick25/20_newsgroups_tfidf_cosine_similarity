@@ -4,72 +4,31 @@ Use the [20 Newsgroups dataset](https://www.kaggle.com/datasets/crawford/20-news
 
 Select **three categories** and randomly choose **100 documents from each category**.
 
-## 1. Data Preprocessing
-
-Preprocess all selected documents by performing the following steps:
+1. Preprocess all selected documents by performing:
 
 - Lowercasing
 - Tokenization
 - Stop-word removal
 - Lemmatization
 
-## 2. TF-IDF Feature Extraction
+2. Convert all documents into **TF-IDF feature vectors**.
 
-Convert all preprocessed documents into **TF-IDF feature vectors**.
+3. Select **two documents** and calculate their cosine similarity manually using **NumPy**, based on their TF-IDF vectors.
 
-## 3. Manual Cosine Similarity
+4. Implement the **cosine similarity calculation from scratch using NumPy**, without using any pre-built cosine similarity function.
 
-Select **two documents** and calculate their cosine similarity manually using **NumPy**, based on their TF-IDF vectors.
+5. For **each document**, find its **5 most similar documents** based on cosine similarity and report their corresponding classes.
 
-## 4. Cosine Similarity from Scratch
+6. Calculate and report:
 
-Implement the **cosine similarity calculation from scratch using NumPy**.
+- Average similarity between documents belonging to the same class
+- Average similarity between documents belonging to different classes
 
-Do **not** use any pre-built cosine similarity function.
+7. Repeat the experiment using
 
-## 5. Most Similar Documents
+- TF-IDF with **unigrams**
+= TF-IDF with **unigrams and bigrams**
 
-For **each document**, find its **5 most similar documents** based on cosine similarity.
+8. Compare the results obtained from both representations and discuss whether adding bigrams improves the ability of TF-IDF to identify documents belonging to the same class.
 
-For each retrieved document, report its corresponding class.
-
-## 6. Similarity Analysis
-
-Calculate and report:
-
-- The **average similarity between documents belonging to the same class**
-- The **average similarity between documents belonging to different classes**
-
-## 7. Compare Unigrams and Bigrams
-
-Repeat the complete experiment using both:
-
-### A. TF-IDF with Unigrams
-
-Use individual words as features.
-
-### B. TF-IDF with Unigrams and Bigrams
-
-Use both individual words and two-word sequences as features.
-
-## 8. Comparison and Discussion
-
-Compare the results obtained from the two representations.
-
-Discuss whether adding **bigrams improves the ability of TF-IDF to identify documents belonging to the same class**.
-
-Base the discussion on the experimental results.
-
-## 9. Final Results
-
-Present the final results in a **comparison table**.
-
-Also include **at least 5 examples of document pairs**, reporting for each pair:
-
-- Document 1
-- Class of Document 1
-- Document 2
-- Class of Document 2
-- Cosine similarity score
-
-The final submission should clearly present the methodology, results, comparison between unigrams and unigrams + bigrams, and the resulting discussion.
+9. Present your final results in a comparison table and include at least 5 examples of document pairs with their cosine similarity scores and corresponding classes.
