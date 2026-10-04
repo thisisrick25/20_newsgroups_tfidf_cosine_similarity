@@ -6,10 +6,10 @@ Select **three categories** and randomly choose **100 documents from each catego
 
 1. Preprocess all selected documents by performing:
 
-  - Lowercasing
-  - Tokenization
-  - Stop-word removal
-  - Lemmatization
+    - Lowercasing
+    - Tokenization
+    - Stop-word removal
+    - Lemmatization
 
 2. Convert all documents into **TF-IDF feature vectors**.
 
@@ -21,13 +21,13 @@ Select **three categories** and randomly choose **100 documents from each catego
 
 6. Calculate and report:
 
-  - Average similarity between documents belonging to the same class
-  - Average similarity between documents belonging to different classes
+    - Average similarity between documents belonging to the same class
+    - Average similarity between documents belonging to different classes
 
 7. Repeat the experiment using
 
-  - TF-IDF with **unigrams**
-  - TF-IDF with **unigrams and bigrams**
+    - TF-IDF with **unigrams**
+    - TF-IDF with **unigrams and bigrams**
 
 8. Compare the results obtained from both representations and discuss whether adding bigrams improves the ability of TF-IDF to identify documents belonging to the same class.
 
